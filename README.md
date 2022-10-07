@@ -100,7 +100,7 @@ Model Results<br>
 - Precision High Risk: 0.03
 - Sensitivity High Risk: 0.64
 - F1 Score High Risk: 0.06
-- High Feature Importance: Total Recorded Principal on the loan
+- High Feature Importance: Total Recorded Principal
 
 ### Ensemble AdaBoost Classifier
 Lastly, the ensemble boosting model is a machine learning model that has a bunch of models that learn from the past models. The first model might have weaknesses, and so the second model then weights those weaknesses higher. This continues based on the number of models you specify. The confusion matrix below is for the Ensemble AdaBoost model:
