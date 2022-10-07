@@ -3,17 +3,31 @@
 ## Overview
 
 ## Resources
-Software: Visual Studio Code 1.71.2, Python 3.7.13, Jupyter Notebook 6.4.8
-Python Libraries: numpy, pandas, sklearn, imblearn
+Software: Visual Studio Code 1.71.2, Python 3.7.13, Jupyter Notebook 6.4.8  
+Python Libraries: numpy, pandas, sklearn, imblearn  
 Machine Learning Algorithms: RandomOverSampler, SMOTE, ClusterCentroids, SMOTEENN, BalancedRandomForestClassifier, EasyEnsembleClassifier
 
 ## Results
+- Total Values Tested Low Risk: 17,104
+- Total Values Tested High Risk: 101
+What is precision, sensitivity, F1, and accuracy.
 
 ### Oversampling
 #### Random Oversampling
 ![](Images/oversampling_acc.PNG)
 ![](Images/oversampling_cm.PNG)
 ![](Images/oversampling_classreport.PNG)
+
+<b>Model Results<b><br>
+- Accuracy Score:
+
+- Precision Low Risk
+- Sensitivity Low Risk:
+- F1 Score Low Risk:
+
+- Precision High Risk:
+- Sensitivity High Risk:
+- F1 Score High Risk:
 
 #### SMOTE Oversampling
 ![](Images/smote_acc.PNG)
