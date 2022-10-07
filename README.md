@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 ## Overview
-This report attempts to use machine learning to predict which credit card transactions are high risk. Using a large loan stats dataset, we will run several machine learning models and see which is best at predicting wheter a credit card transaction is low or high risk. The models will include oversampling, undersampling, forest tree, and ensemble. The training and testing of the models will happen in a 75/25 split. The models will be trained on 75% of the sample data and will be tested using the other 25% of the sample. 
+This report attempts to use machine learning to predict which credit card transactions are high risk. Using a large loan stats dataset, we will run several machine learning models and see which is best at predicting whether a credit card transaction is low or high risk. The models will include oversampling, undersampling, forest tree, and ensemble. The training and testing of the models will happen in a 75/25 split. The models will be trained on 75% of the sample data and will be tested using the other 25% of the sample. 
 
 ## Resources
 Software: Visual Studio Code 1.71.2, Python 3.7.13, Jupyter Notebook 6.4.8  
@@ -13,7 +13,7 @@ The number of high risk credit card transactions are considerably lower than the
 - Total Values Tested Low Risk: 17,104
 - Total Values Tested High Risk: 101
 
-The below results by model focus on summary based on a confusion matrix. The matrix details the number of true positive, true negative, false positive, and false negative results by each model. In this case, the low risk and high risk represent the positive/negative values. To determine the predictive nature of each model we will use the below statistics:
+The results by each model focus on the summary of a confusion matrix. The matrix details the number of true positive, true negative, false positive, and false negative results by each model. In this case, the low risk and high risk represent positive/negative. To determine the predictive nature of each model we will use the below statistics:
 - Accuracy: Percentage of the total predictions the model got correct.
 - Precision: Percentage of the positive predictions the model got correct.
 - Sensitivity: Percentage of the actual positive results the model predicted correct.
@@ -85,7 +85,7 @@ Model Results<br>
 - F1 Score High Risk: 0.02
 
 ### Balanced Random Forest Classifier
-Instead of changing the samples, we can change the machine learning model from logistic to balanced random forest. The algorithm uses a lot of decision trees that predict the outcome based on a series of true and false questions. Each tree comes up with a decision and whatever decision is the highest, the model predicts that outcome. Below is a confusion matrix of the balanced random forest model:
+Instead of changing the samples, we can change the machine learning model from logistic to balanced random forest. The algorithm uses a lot of decision trees that predict the outcome based on a series of true and false questions. Each tree comes up with a decision and whatever decision is the highest, the model predicts that outcome. Also, the random forest model can let you know when features are most important to the model. Below is a confusion matrix of the balanced random forest model and a feature importance table noting the top five features by importance:
 
 ![](Images/brfc_cm.PNG)
 ![](Images/brfc_importance.PNG)
@@ -100,7 +100,7 @@ Model Results<br>
 - Precision High Risk: 0.03
 - Sensitivity High Risk: 0.64
 - F1 Score High Risk: 0.06
-- High Feature Importance: Total 
+- High Feature Importance: Total Recorded Principal on the loan
 
 ### Ensemble AdaBoost Classifier
 Lastly, the ensemble boosting model is a machine learning model that has a bunch of models that learn from the past models. The first model might have weaknesses, and so the second model then weights those weaknesses higher. This continues based on the number of models you specify. The confusion matrix below is for the Ensemble AdaBoost model:
